@@ -1,706 +1,429 @@
-
-Log in
-Sign up for free
-
-    برا سایت  تو github  یک کد html حرفهای  بساز  یک سایت نمایش میخوام
-
-    حتماً! برات یک سایت نمایش حرفه‌ای و مدرن با HTML، CSS و JavaScript می‌سازم که مستقیم بتونی داخل GitHub Pages آپلودش کنی و سایتت آنلاین بشه.
-
-    پیشنهادم یک سایت با طراحی لوکس، انیمیشن‌های جذاب، ریسپانسیو و ظاهر حرفه‌ایه.
-    🎨 طرح پیشنهادی سایت
-    Glassmorphism Landing Page — AI Website Prompt | AI Prompt Websites
-     
-    Personal Portfolio Website Design | Landing page by Quadiz on Dribbble
-     
-    Design Agency Landing page by Roohi Koohi ✦ on Dribbble
-     
-    امکانات سایت
-
-        طراحی مدرن و حرفه‌ای
-
-        افکت‌های انیمیشنی و حرکتی
-
-        منوی حرفه‌ای
-
-        بخش نمایش تصاویر و نمونه‌کارها
-
-        افکت نور و گرادیانت
-
-        سازگار با موبایل و کامپیوتر
-
-        سرعت بالا و بدون نیاز به بک‌اند
-
-        آماده انتشار در GitHub Pages
-    فقط یک سؤال:
-
-    چه نوع سایتی می‌خوای؟
-
-    ۱. نوع سایت
-    نمایشگاهی و معرفی محصولات
-    نمایش نمونه‌کار و گالری تصاویر
-    معرفی شرکت و کسب‌وکار
-    فروشگاهی
-    شخصی و رزومه
-    سایت تبلیغاتی و خلاقانه
-
-    ۲. سبک طراحی
-    مشکی و بنفش، نئونی و لوکس
-    سفید و طلایی، مینیمال
-    آبی و مشکی، تکنولوژیک
-    رنگارنگ و انیمیشنی
-
-    ۳. نام سایت
-
-    Log in to create and download files for free.
-    Log in
-    Sign up for free
-
-    سایت را بساز. نوع: نمایشگاهی و معرفی محصولات؛ سبک: مشکی و بنفش، نئونی و لوکس؛ نام: SHOWCASE؛ کد کامل HTML/CSS/JavaScript آماده GitHub Pages را ارائه بده.
-    سایت حرفه‌ای SHOWCASE
-    آماده انتشار در GitHub Pages
-
-    یک سایت نمایشگاهی لوکس با تم مشکی و بنفش نئونی برای معرفی محصولات طراحی می‌کنیم؛ با انیمیشن، گالری محصولات، جستجو، فیلتر دسته‌بندی، کارت‌های شیشه‌ای و طراحی کاملاً واکنش‌گرا.
-
-    ویژگی مهم: تمام سایت در یک فایل index.html قرار می‌گیرد؛ بنابراین نیازی به نصب برنامه یا سرور نداری.
-    کد کامل سایت
-
-    فایل زیر را با نام index.html ذخیره کن. تمام HTML، CSS و JavaScript داخل همین فایل است.
-
-
-    <!DOCTYPE html>
-    <html lang="fa" dir="rtl">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#090710">
-    <meta name="description" content="SHOWCASE - نمایشگاه محصولات خاص و لوکس">
-    <title>SHOWCASE | دنیای محصولات خاص</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <style>
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="یک وب‌سایت نمایشی مدرن، سریع و واکنش‌گرا؛ آماده انتشار روی GitHub Pages.">
+  <title>نمایشگاه دیجیتال | تجربه‌ای متفاوت</title>
+  <style>
     :root {
-      --bg: #090710;
-      --surface: #13101e;
-      --purple: #a855f7;
-      --pink: #ec4899;
-      --text: #f8f5ff;
-      --muted: #a49bb5;
-      --border: rgba(255,255,255,.09);
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: rgba(255,255,255,.065);
+      --panel-border: rgba(255,255,255,.12);
+      --text: #f4f7ff;
+      --muted: #aab5ce;
+      --accent: #8b7cff;
+      --accent-2: #43d9c5;
+      --max: 1160px;
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
+    * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
-      background: var(--bg);
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 85% 5%, rgba(107,88,255,.19), transparent 38rem),
+        radial-gradient(ellipse at 10% 45%, rgba(67,217,197,.10), transparent 34rem),
+        var(--bg);
       color: var(--text);
-      font-family: 'Vazirmatn', sans-serif;
-      overflow-x: hidden;
+      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+      line-height: 1.8;
     }
-
-    button, input { font: inherit; }
-    button { cursor: pointer; }
     a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(1160px, 90%);
-      margin: auto;
+    button { font: inherit; }
+    .container { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(11,16,32,.78); backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
     }
-
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-      background: rgba(9,7,16,.82);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav {
-      height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-size: 27px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      direction: ltr;
-    }
-
-    .logo span { color: var(--purple); }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-      color: #c8bfd5;
-      font-size: 14px;
-    }
-
-    .nav-links a:hover { color: #c084fc; }
-
-    .nav-btn, .primary-btn {
-      background: linear-gradient(110deg,var(--purple),var(--pink));
-      color: white;
-      border: 0;
-      padding: 11px 22px;
-      border-radius: 10px;
-      font-weight: 700;
-      box-shadow: 0 0 24px rgba(168,85,247,.24);
-      transition: .3s;
-    }
-
-    .nav-btn:hover, .primary-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0 35px rgba(168,85,247,.5);
-    }
-
-    .menu-toggle {
-      display: none;
-      color: white;
-      background: none;
-      border: 0;
-      font-size: 25px;
-    }
-
-    .hero {
-      min-height: 760px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-      padding: 130px 0 80px;
-      background:
-        radial-gradient(ellipse at 80% 45%,rgba(123,31,162,.22),transparent 40%),
-        radial-gradient(ellipse at 10% 80%,rgba(80,30,120,.15),transparent 35%);
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 450px;
-      height: 450px;
-      border: 1px solid rgba(168,85,247,.15);
-      border-radius: 50%;
-      right: -200px;
-      top: 100px;
-      box-shadow: 0 0 100px rgba(168,85,247,.1);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 700px;
-    }
-
-    .eyebrow {
-      color: #d8a5ff;
-      font-size: 13px;
-      letter-spacing: 3px;
-      direction: ltr;
-      display: inline-block;
-      border: 1px solid rgba(168,85,247,.35);
-      background: rgba(168,85,247,.08);
-      padding: 9px 15px;
-      border-radius: 50px;
-      margin-bottom: 25px;
-    }
-
-    .hero h1 {
-      font-size: clamp(42px,7vw,78px);
-      line-height: 1.35;
-      font-weight: 900;
-    }
-
-    .hero h1 span {
-      background: linear-gradient(100deg,#c084fc,#ec4899);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-
-    .hero p {
-      color: var(--muted);
-      line-height: 2.2;
-      max-width: 560px;
-      margin: 20px 0 30px;
-      font-size: 16px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .secondary-btn {
-      border: 1px solid rgba(192,132,252,.45);
-      background: transparent;
-      color: white;
-      border-radius: 10px;
-      padding: 11px 24px;
-      transition: .3s;
-    }
-
-    .secondary-btn:hover {
-      background: rgba(168,85,247,.13);
-    }
-
-    .hero-stats {
-      display: flex;
-      gap: 50px;
-      margin-top: 60px;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 27px;
-      color: #d8a5ff;
-    }
-
-    .stat small { color: var(--muted); }
-
-    .section {
-      padding: 100px 0;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .section-heading small {
-      color: var(--purple);
-      letter-spacing: 2px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(27px,4vw,40px);
-      margin: 12px 0;
-    }
-
-    .section-heading p { color: var(--muted); }
-
-    .categories {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 35px;
-    }
-
-    .filter-btn {
-      color: #c9bfd7;
-      border: 1px solid var(--border);
-      background: #15111f;
-      border-radius: 30px;
-      padding: 9px 22px;
-      transition: .3s;
-    }
-
-    .filter-btn.active, .filter-btn:hover {
-      color: white;
-      border-color: var(--purple);
-      background: rgba(168,85,247,.18);
-      box-shadow: 0 0 20px rgba(168,85,247,.13);
-    }
-
-    .search-box {
-      max-width: 420px;
-      margin: 0 auto 35px;
-    }
-
-    .search-box input {
-      width: 100%;
-      padding: 14px 20px;
-      background: #15111f;
-      border: 1px solid var(--border);
-      color: white;
-      outline: none;
-      border-radius: 12px;
-    }
-
-    .search-box input:focus { border-color: var(--purple); }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 25px;
-    }
-
-    .product-card {
-      background: linear-gradient(145deg,#191323,#100d18);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      overflow: hidden;
-      transition: .4s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-9px);
-      border-color: rgba(192,132,252,.5);
-      box-shadow: 0 15px 45px rgba(105,36,160,.16);
-    }
-
-    .product-image {
-      height: 260px;
-      overflow: hidden;
-      position: relative;
-      background: #20162b;
-    }
-
-    .product-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: .6s;
-    }
-
-    .product-card:hover img { transform: scale(1.08); }
-
-    .product-tag {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      padding: 6px 12px;
-      background: rgba(168,85,247,.85);
-      color: white;
-      font-size: 11px;
-      border-radius: 30px;
-    }
-
-    .product-info { padding: 22px; }
-
-    .product-info small {
-      color: #bd8af0;
-    }
-
-    .product-info h3 {
-      margin: 9px 0;
-      font-size: 19px;
-    }
-
-    .product-info p {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 2;
-      min-height: 52px;
-    }
-
-    .product-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    .product-price {
-      font-weight: 800;
-      color: #d8a5ff;
-    }
-
-    .view-btn {
-      border: 1px solid rgba(168,85,247,.5);
-      background: transparent;
-      color: white;
-      border-radius: 8px;
-      padding: 8px 14px;
-      font-size: 12px;
-    }
-
-    .view-btn:hover { background: var(--purple); }
-
-    .empty-message {
-      display: none;
-      text-align: center;
-      color: var(--muted);
-      padding: 35px;
-      grid-column: 1/-1;
-    }
-
-    .about {
-      background:
-        radial-gradient(circle at 90% 50%,rgba(168,85,247,.12),transparent 35%),
-        #100c19;
-      border-block: 1px solid var(--border);
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .about-image {
-      height: 410px;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(168,85,247,.3);
-    }
-
-    .about-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .about-text h2 {
-      font-size: 37px;
-      margin-bottom: 20px;
-    }
-
-    .about-text h2 span { color: #c084fc; }
-
-    .about-text p {
-      color: var(--muted);
-      line-height: 2.3;
-      margin-bottom: 25px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-
-    .feature {
-      padding: 16px;
-      background: rgba(168,85,247,.07);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-    }
-
-    .feature strong {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .feature small { color: var(--muted); }
-
-    .cta {
-      text-align: center;
-      padding: 90px 20px;
-      background: radial-gradient(ellipse,rgba(126,34,206,.2),transparent 65%);
-    }
-
-    .cta h2 { font-size: 34px; margin-bottom: 15px; }
-
-    .cta p { color: var(--muted); margin-bottom: 25px; }
-
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 35px 0;
-      color: var(--muted);
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .socials { display: flex; gap: 20px; }
-    .socials a:hover { color: #c084fc; }
-
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,.82);
-      z-index: 200;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .modal.show { display: flex; }
-
-    .modal-content {
-      width: min(500px,100%);
-      background: #171120;
-      border: 1px solid rgba(192,132,252,.4);
-      border-radius: 20px;
-      padding: 25px;
-      position: relative;
-      animation: appear .3s ease;
-    }
-
-    .modal-content img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
-    .modal-content p {
-      color: var(--muted);
-      line-height: 2;
-      margin: 12px 0;
-    }
-
-    .close-modal {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      border: 0;
-      color: white;
-      background: #392448;
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.3px; }
+    .brand-mark {
+      width: 39px; height: 39px; display: grid; place-items: center; border-radius: 13px;
+      background: linear-gradient(135deg, var(--accent), #5c50db); box-shadow: 0 8px 28px #7060ff40;
       font-size: 20px;
     }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: .7s ease;
+    .nav-links { display: flex; align-items: center; gap: 28px; color: var(--muted); font-size: 14px; }
+    .nav-links a:hover { color: white; }
+    .nav-cta, .button {
+      display: inline-flex; justify-content: center; align-items: center; gap: 9px;
+      padding: 11px 18px; border-radius: 12px; font-weight: 700; font-size: 14px;
+      border: 1px solid transparent; transition: transform .2s, border-color .2s, background .2s;
+      cursor: pointer;
     }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .nav-cta, .button-primary { color: #fff; background: linear-gradient(135deg, #8878ff, #6454e8); box-shadow: 0 10px 30px #7464ff2b; }
+    .button-secondary { border-color: var(--panel-border); background: rgba(255,255,255,.035); color: var(--text); }
+    .button:hover, .nav-cta:hover { transform: translateY(-2px); }
+    .hero { padding: 94px 0 76px; display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 64px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px; padding: 6px 12px; border-radius: 999px;
+      border: 1px solid #8b7cff55; background: #8b7cff12; color: #c5bdff; font-size: 13px;
     }
-
-    @keyframes appear {
-      from { opacity: 0; transform: scale(.94); }
-      to { opacity: 1; transform: scale(1); }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 14px var(--accent-2); }
+    h1 { margin: 22px 0 18px; font-size: clamp(38px, 5.4vw, 68px); line-height: 1.25; letter-spacing: -2px; }
+    .gradient-text { background: linear-gradient(90deg, #b5aaff, #56e4d1); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero-copy { max-width: 590px; color: var(--muted); font-size: 17px; margin: 0 0 28px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .mini-proof { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 34px; color: var(--muted); font-size: 13px; }
+    .mini-proof span { display: inline-flex; align-items: center; gap: 8px; }
+    .check { color: var(--accent-2); font-weight: 900; }
+    .visual { position: relative; min-height: 410px; display: grid; place-items: center; }
+    .orb { position: absolute; width: 310px; height: 310px; border-radius: 50%; background: linear-gradient(135deg, #8b7cff55, #43d9c522); filter: blur(2px); }
+    .showcase {
+      position: relative; width: min(100%, 440px); padding: 16px; border-radius: 25px;
+      border: 1px solid #ffffff24; background: linear-gradient(145deg, #ffffff12, #ffffff04);
+      box-shadow: 0 35px 100px #0007; transform: rotate(-2deg);
     }
-
-    @media(max-width:850px) {
-      .products-grid { grid-template-columns: repeat(2,1fr); }
-      .about-grid { grid-template-columns: 1fr; gap: 35px; }
+    .window-bar { display: flex; align-items: center; gap: 6px; padding: 4px 4px 15px; border-bottom: 1px solid #ffffff15; }
+    .window-bar i { display: block; width: 8px; height: 8px; border-radius: 50%; background: #ff7777; }
+    .window-bar i:nth-child(2) { background: #ffd36e; } .window-bar i:nth-child(3) { background: #54d7a2; }
+    .window-label { margin-right: auto; color: #8d9ab7; font-size: 10px; }
+    .mock-content { padding: 24px 12px 12px; }
+    .mock-label { font-size: 11px; color: #a99fff; }
+    .mock-title { font-size: 26px; font-weight: 800; margin: 8px 0; }
+    .mock-line { height: 7px; width: 82%; background: #ffffff14; border-radius: 99px; margin: 10px 0; }
+    .mock-line.short { width: 57%; }
+    .mock-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 25px; }
+    .mock-card { height: 104px; border-radius: 13px; background: linear-gradient(145deg, #8b7cff35, #ffffff08); border: 1px solid #ffffff13; padding: 12px; }
+    .mock-card:nth-child(2) { background: linear-gradient(145deg, #43d9c529, #ffffff08); }
+    .mock-icon { font-size: 20px; }
+    .mock-card b { display: block; font-size: 10px; margin-top: 12px; }
+    .float-tag { position: absolute; padding: 12px 15px; border: 1px solid #ffffff22; background: #171d32ed; border-radius: 14px; box-shadow: 0 15px 40px #0005; font-size: 12px; }
+    .float-tag.one { top: 45px; left: -3px; } .float-tag.two { bottom: 40px; right: -8px; }
+    .float-tag strong { color: var(--accent-2); font-size: 17px; display: block; }
+    section { scroll-margin-top: 90px; }
+    .section { padding: 66px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 28px; }
+    .section-kicker { color: var(--accent-2); font-size: 12px; font-weight: 800; letter-spacing: 1px; }
+    h2 { font-size: clamp(27px, 3vw, 39px); line-height: 1.35; margin: 7px 0 0; letter-spacing: -.7px; }
+    .section-desc { max-width: 430px; color: var(--muted); font-size: 14px; margin: 0; }
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature, .project, .stat, .contact-card {
+      background: var(--panel); border: 1px solid var(--panel-border); border-radius: 20px;
     }
-
-    @media(max-width:650px) {
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 78px;
-        right: 0;
-        width: 100%;
-        background: #100c19;
-        flex-direction: column;
-        padding: 25px;
-        gap: 20px;
-        border-bottom: 1px solid var(--border);
-      }
-
+    .feature { padding: 25px; transition: transform .2s, background .2s; }
+    .feature:hover, .project:hover { transform: translateY(-5px); background: rgba(255,255,255,.085); }
+    .feature-icon { width: 47px; height: 47px; display: grid; place-items: center; border-radius: 15px; background: #8b7cff20; font-size: 22px; margin-bottom: 18px; }
+    .feature:nth-child(2) .feature-icon { background: #43d9c51b; }
+    .feature:nth-child(3) .feature-icon { background: #ffbf691b; }
+    .feature h3 { font-size: 17px; margin: 0 0 8px; }
+    .feature p { color: var(--muted); font-size: 13px; margin: 0; }
+    .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .project { overflow: hidden; transition: transform .2s, background .2s; }
+    .project-art { min-height: 170px; display: grid; place-items: center; position: relative; overflow: hidden; background: linear-gradient(135deg,#6355dd,#171d3b); }
+    .project:nth-child(2) .project-art { background: linear-gradient(135deg,#187c79,#132b42); }
+    .project:nth-child(3) .project-art { background: linear-gradient(135deg,#a35c98,#30234e); }
+    .art-shape { width: 145px; height: 100px; border: 1px solid #ffffff66; border-radius: 15px; background: #ffffff1c; transform: rotate(-8deg); box-shadow: 0 18px 40px #0003; display: grid; place-items: center; font-size: 36px; }
+    .project-body { padding: 19px; }
+    .project-body h3 { margin: 0 0 6px; font-size: 16px; }
+    .project-body p { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
+    .tag { display: inline-block; color: #c7c0ff; background: #8b7cff18; border-radius: 7px; padding: 3px 8px; font-size: 10px; margin-left: 5px; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; }
+    .stat { text-align: center; padding: 20px 12px; }
+    .stat strong { display: block; font-size: 28px; color: #c3bcff; line-height: 1.4; }
+    .stat span { color: var(--muted); font-size: 12px; }
+    .contact-card { padding: 34px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: linear-gradient(110deg,#8b7cff16,#43d9c510); }
+    .contact-card p { color: var(--muted); margin: 8px 0 0; font-size: 14px; }
+    footer { margin-top: 70px; padding: 25px 0; border-top: 1px solid #ffffff12; color: var(--muted); font-size: 12px; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .footer-links { display: flex; gap: 18px; }
+    .footer-links a:hover { color: white; }
+    .menu-toggle { display: none; border: 1px solid var(--panel-border); color: white; background: transparent; border-radius: 10px; padding: 8px 11px; }
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; gap: 25px; padding-top: 65px; }
+      .hero-copy { max-width: 720px; }
+      .visual { min-height: 360px; }
+      .features, .projects { grid-template-columns: repeat(2,1fr); }
+      .feature:last-child, .project:last-child { grid-column: span 2; }
+      .section-head { align-items: start; flex-direction: column; }
+    }
+    @media (max-width: 600px) {
+      .container { width: min(var(--max), calc(100% - 28px)); }
+      .nav { min-height: 66px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-cta { display: none; }
+      .nav-links { display: none; position: absolute; top: 66px; inset-inline: 0; padding: 18px 22px; background: #11172a; border-bottom: 1px solid #ffffff18; flex-direction: column; align-items: stretch; gap: 12px; }
       .nav-links.open { display: flex; }
-      .menu-toggle { display: block; }
-      .nav-btn { display: none; }
-      .hero { min-height: 680px; }
-      .hero-stats { gap: 25px; }
-      .products-grid { grid-template-columns: 1fr; }
-      .product-image { height: 280px; }
-      .about-text h2 { font-size: 29px; }
-      .about-image { height: 280px; }
-      .cta h2 { font-size: 27px; }
+      .hero { padding: 50px 0 35px; }
+      h1 { letter-spacing: -1px; }
+      .hero-copy { font-size: 15px; }
+      .visual { min-height: 310px; }
+      .orb { width: 230px; height: 230px; }
+      .showcase { padding: 11px; }
+      .mock-title { font-size: 20px; }
+      .mock-card { height: 85px; padding: 8px; }
+      .float-tag.one { top: 12px; left: 0; } .float-tag.two { bottom: 8px; right: 0; }
+      .features, .projects { grid-template-columns: 1fr; }
+      .feature:last-child, .project:last-child { grid-column: auto; }
+      .stats { grid-template-columns: repeat(2,1fr); }
+      .contact-card { padding: 24px; align-items: stretch; flex-direction: column; }
+      .contact-card .button { align-self: flex-start; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .section { padding: 48px 0; }
     }
-    </style>
-    </head>
 
-    <body>
+    /* Enhanced visual layer */
+    .hero { position: relative; isolation: isolate; }
+    .hero::before {
+      content: ""; position: absolute; z-index: -1; inset: -35px -8vw 0;
+      background:
+        radial-gradient(ellipse at 75% 38%, rgba(83,91,255,.22), transparent 30%),
+        radial-gradient(ellipse at 88% 60%, rgba(177,52,255,.13), transparent 26%),
+        linear-gradient(115deg, transparent 35%, rgba(60,92,255,.06), transparent 78%);
+      pointer-events: none;
+    }
+    .hero .visual { min-height: 470px; }
+    .showcase { backdrop-filter: blur(16px); }
+    .showcase::after {
+      content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+      background: linear-gradient(135deg, rgba(139,124,255,.09), transparent 45%, rgba(67,217,197,.06));
+    }
+    .mock-card { position: relative; overflow: hidden; }
+    .mock-card::after { content: ""; position: absolute; width: 90px; height: 90px; border-radius: 50%; background: #a99bff20; filter: blur(12px); left: -30px; bottom: -40px; }
+    .feature, .project, .stat, .contact-card, .quote-card, .step-card, .faq-item {
+      box-shadow: 0 16px 45px rgba(0,0,0,.12);
+    }
+    .feature { position: relative; overflow: hidden; }
+    .feature::after { content: ""; position: absolute; width: 110px; height: 110px; border-radius: 50%; background: #8b7cff0d; top: -65px; left: -40px; }
+    .feature-icon { box-shadow: inset 0 0 0 1px #ffffff10; }
+    .project-art { min-height: 190px; }
+    .project-art::before, .project-art::after { content: ""; position: absolute; border: 1px solid #ffffff35; border-radius: 50%; width: 220px; height: 220px; }
+    .project-art::after { width: 160px; height: 160px; }
+    .project-art .art-shape { z-index: 1; backdrop-filter: blur(8px); }
+    .project-body { background: linear-gradient(180deg, rgba(255,255,255,.018), transparent); }
+    .section-divider { height: 1px; margin: 8px 0 0; background: linear-gradient(90deg, transparent, #8b7cff55, #43d9c555, transparent); }
+    .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; counter-reset: step; }
+    .step-card { position: relative; padding: 25px; border: 1px solid var(--panel-border); border-radius: 20px; background: linear-gradient(145deg, rgba(139,124,255,.09), rgba(255,255,255,.025)); overflow: hidden; }
+    .step-card::before { counter-increment: step; content: "0" counter(step); display: block; font-size: 34px; font-weight: 900; color: #a99bff; opacity: .9; margin-bottom: 14px; }
+    .step-card h3 { margin: 0 0 7px; font-size: 16px; }
+    .step-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .quote-card { border: 1px solid var(--panel-border); border-radius: 22px; padding: 28px; background: linear-gradient(120deg, rgba(67,217,197,.07), rgba(139,124,255,.09)); display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
+    .quote-mark { width: 55px; height: 55px; display: grid; place-items: center; border-radius: 17px; background: #8b7cff22; color: #c4bbff; font-size: 31px; }
+    .quote-card blockquote { margin: 0; font-size: 16px; }
+    .quote-card p { margin: 10px 0 0; color: var(--muted); font-size: 13px; }
+    .faq-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .faq-item { padding: 18px 20px; border: 1px solid var(--panel-border); border-radius: 16px; background: var(--panel); }
+    .faq-item summary { cursor: pointer; font-weight: 700; font-size: 14px; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: var(--accent-2); font-size: 21px; line-height: 1; }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
+    .contact-card { position: relative; overflow: hidden; }
+    .contact-card::after { content: ""; position: absolute; width: 230px; height: 230px; border: 1px solid #8b7cff25; border-radius: 50%; left: -65px; bottom: -170px; box-shadow: 0 0 0 22px #8b7cff08, 0 0 0 44px #8b7cff06; pointer-events: none; }
+    .newsletter { display: flex; gap: 8px; margin-top: 16px; max-width: 440px; }
+    .newsletter input { min-width: 0; flex: 1; padding: 12px 14px; border-radius: 12px; color: var(--text); background: #ffffff09; border: 1px solid var(--panel-border); outline: none; font: inherit; font-size: 13px; }
+    .newsletter input:focus { border-color: #8b7cffaa; }
+    .newsletter button { border: 0; }
+    .form-note { color: var(--accent-2); font-size: 12px; margin-top: 8px; min-height: 20px; }
+    .back-top { position: fixed; z-index: 15; left: 20px; bottom: 20px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 14px; border: 1px solid var(--panel-border); background: #171d32dd; color: white; cursor: pointer; opacity: 0; pointer-events: none; transform: translateY(8px); transition: .2s; }
+    .back-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+    .status-pill { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: #b7ffe9; background: #43d9c514; border: 1px solid #43d9c52c; padding: 5px 9px; border-radius: 999px; }
+    @media (max-width: 850px) {
+      .steps { grid-template-columns: 1fr; }
+      .faq-list { grid-template-columns: 1fr; }
+      .hero .visual { min-height: 390px; }
+    }
+    @media (max-width: 600px) {
+      .hero .visual { min-height: 310px; }
+      .quote-card { grid-template-columns: 1fr; padding: 22px; }
+      .newsletter { flex-direction: column; }
+      .newsletter .button { width: 100%; }
+      .back-top { left: 12px; bottom: 12px; }
+    }
 
-    <header>
-      <div class="container nav">
-        <a href="#" class="logo">SHOW<span>CASE</span></a>
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="صفحه اصلی">
+        <span class="brand-mark">✦</span><span>نمایشگاه دیجیتال</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="منوی اصلی">
+        <a href="#home">خانه</a><a href="#features">ویژگی‌ها</a><a href="#projects">نمونه‌کارها</a><a href="#process">مراحل</a><a href="#about">درباره</a><a href="#faq">پرسش‌ها</a><a href="#contact">تماس</a>
+      </nav>
+      <a class="nav-cta" href="#contact">شروع کنیم <span aria-hidden="true">←</span></a>
+    </div>
+  </header>
 
-        <nav class="nav-links" id="navLinks">
-          <a href="#home">خانه</a>
-          <a href="#products">محصولات</a>
-          <a href="#about">درباره ما</a>
-          <a href="#contact">ارتباط با ما</a>
-        </nav>
-
-        <a href="#products" class="nav-btn">مشاهده محصولات</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
+  <main>
+    <section class="container hero" id="home">
+      <div>
+        <span class="eyebrow"><span class="status-dot"></span> طراحی مدرن · تجربه‌ای روان <span class="status-pill">نسخه ویژه</span></span>
+        <h1>ایده‌های شما،<br><span class="gradient-text">با ظاهری متفاوت.</span></h1>
+        <p class="hero-copy">یک فضای دیجیتال شیک برای معرفی برند، پروژه یا خدمات شما. طراحی واکنش‌گرا، سرعت بالا و جزئیات ظریف؛ آماده برای انتشار رایگان روی GitHub Pages.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">مشاهده نمونه‌کارها <span aria-hidden="true">↙</span></a>
+          <a class="button button-secondary" href="#features">بیشتر بدانید</a>
+        </div>
+        <div class="mini-proof">
+          <span><b class="check">✓</b> بدون نیاز به نصب</span>
+          <span><b class="check">✓</b> سازگار با موبایل</span>
+          <span><b class="check">✓</b> HTML و CSS خالص</span>
+        </div>
       </div>
-    </header>
-
-    <main>
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content reveal">
-          <span class="eyebrow">WELCOME TO SHOWCASE</span>
-
-          <h1>
-            دنیای خاص<br>
-            <span>محصولات لوکس</span>
-          </h1>
-
-          <p>
-            به SHOWCASE خوش آمدید؛ جایی برای کشف محصولات
-            متفاوت، طراحی‌های خاص و انتخاب‌هایی فراتر از انتظار.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#products" class="primary-btn">کشف محصولات ←</a>
-            <a href="#about" class="secondary-btn">درباره مجموعه</a>
+      <div class="visual" aria-label="پیش‌نمایش گرافیکی وب‌سایت">
+        <div class="orb"></div>
+        <div class="showcase">
+          <div class="window-bar"><i></i><i></i><i></i><span class="window-label">digital-showcase / preview</span></div>
+          <div class="mock-content">
+            <span class="mock-label">YOUR NEXT BIG IDEA</span>
+            <div class="mock-title">طراحی برای آینده</div>
+            <div class="mock-line"></div><div class="mock-line short"></div>
+            <div class="mock-cards">
+              <div class="mock-card"><span class="mock-icon">✧</span><b>طراحی خلاق</b></div>
+              <div class="mock-card"><span class="mock-icon">◈</span><b>عملکرد سریع</b></div>
+              <div class="mock-card"><span class="mock-icon">⌘</span><b>ساختار ساده</b></div>
+            </div>
           </div>
+        </div>
+        <div class="float-tag one"><strong>100%</strong> واکنش‌گرا</div>
+        <div class="float-tag two"><strong>01 فایل</strong> آماده انتشار</div>
+      </div>
+    </section>
 
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>+120</strong>
-              <small>محصول منتخب</small>
-            </div>
-            <div class="stat">
-              <strong>+35</strong>
-              <small>برند خاص</small>
-            </div>
-            <div class="stat">
-              <strong>24/7</strong>
-              <small>همراه شما</small>
-            </div>
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">چرا این طراحی؟</span><h2>ساده، سریع و حرفه‌ای</h2></div>
+          <p class="section-desc">همه‌چیز در یک فایل قرار گرفته تا ویرایش و انتشار آن در مخزن GitHub آسان باشد.</p>
+        </div>
+        <div class="features">
+          <article class="feature"><div class="feature-icon">✦</div><h3>ظاهر چشم‌نواز</h3><p>پس‌زمینه‌های گرادیانی، کارت‌های شیشه‌ای و جزئیات ظریف برای یک تجربه بصری مدرن.</p></article>
+          <article class="feature"><div class="feature-icon">↗</div><h3>واکنش‌گرا در همه نمایشگرها</h3><p>چیدمان خود را با موبایل، تبلت و نمایشگر دسکتاپ هماهنگ می‌کند.</p></article>
+          <article class="feature"><div class="feature-icon">⌘</div><h3>آماده GitHub Pages</h3><p>بدون کتابخانه یا فرایند ساخت؛ کافی است فایل را با نام index.html در مخزن قرار دهید.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">گالری منتخب</span><h2>نمونه‌هایی برای نمایش</h2></div>
+          <p class="section-desc">این کارت‌ها نمایشی هستند؛ متن و موضوع هرکدام را می‌توانید با محتوای واقعی خودتان جایگزین کنید.</p>
+        </div>
+        <div class="projects">
+          <article class="project"><div class="project-art"><div class="art-shape">◈</div></div><div class="project-body"><h3>هویت بصری</h3><p>معرفی یک برند با زبان بصری یکپارچه و مدرن.</p><span class="tag">برندینگ</span><span class="tag">طراحی</span></div></article>
+          <article class="project"><div class="project-art"><div class="art-shape">⌘</div></div><div class="project-body"><h3>محصول دیجیتال</h3><p>نمایش امکانات و مزایای یک محصول یا سرویس آنلاین.</p><span class="tag">محصول</span><span class="tag">تجربه کاربری</span></div></article>
+          <article class="project"><div class="project-art"><div class="art-shape">✧</div></div><div class="project-body"><h3>پروژه خلاقانه</h3><p>فضایی برای ارائه ایده‌ها، دستاوردها و کارهای منتخب.</p><span class="tag">خلاقیت</span><span class="tag">نمونه‌کار</span></div></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">مسیر همکاری</span><h2>از ایده تا نتیجه، در سه قدم</h2></div>
+          <p class="section-desc">ساختار صفحه طوری چیده شده که مخاطب فقط تماشا نکند؛ مسیر بعدی را هم به‌سادگی پیدا کند.</p>
+        </div>
+        <div class="steps">
+          <article class="step-card"><h3>شناخت هدف</h3><p>پیام اصلی، مخاطب و مهم‌ترین بخش‌های سایت را مشخص کنید.</p></article>
+          <article class="step-card"><h3>طراحی تجربه</h3><p>محتوا را در بخش‌های منظم، خوانا و چشم‌نواز نمایش دهید.</p></article>
+          <article class="step-card"><h3>انتشار آنلاین</h3><p>فایل را در GitHub قرار دهید و سایت را با GitHub Pages منتشر کنید.</p></article>
+        </div>
+        <div class="section-divider"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">در یک نگاه</span><h2>جزئیات کوچک، تفاوت بزرگ</h2></div>
+          <p class="section-desc">ساختار تمیز و قابل‌فهم باعث می‌شود بتوانید رنگ‌ها، عنوان‌ها، متن‌ها و لینک‌ها را بدون ابزار اضافی تغییر دهید.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>۱</strong><span>فایل اصلی</span></div>
+          <div class="stat"><strong>۰</strong><span>وابستگی خارجی</span></div>
+          <div class="stat"><strong>RTL</strong><span>مناسب زبان فارسی</span></div>
+          <div class="stat"><strong>∞</strong><span>امکان شخصی‌سازی</span></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="feedback">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">تجربه مخاطب</span><h2>طراحی خوب، حس اعتماد می‌سازد</h2></div>
+          <p class="section-desc">این بخش برای نمایش نظر مشتری یا یک پیام کوتاه درباره کیفیت خدمات شماست.</p>
+        </div>
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <div>
+            <blockquote>«یک معرفی خوب باید در چند ثانیه اول، پیام اصلی را روشن کند؛ طراحی منظم و محتوای درست این مسیر را ساده‌تر می‌کند.»</blockquote>
+            <p>— متن نمونه برای بخش بازخورد مشتری</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="products">
+    <section class="section" id="faq">
       <div class="container">
-        <div class="section-heading reveal">
-          <small>OUR COLLECTION</small>
-          <h2>ویترین محصولات</h2>
-          <p>محصولات خاص را در یک نگاه کشف کنید.</p>
+        <div class="section-head">
+          <div><span class="section-kicker">پرسش‌های متداول</span><h2>چند پاسخ کوتاه</h2></div>
+          <p class="section-desc">برای اینکه صفحه کامل‌تر باشد، پاسخ پرسش‌های مهم بازدیدکننده را همین‌جا نمایش دهید.</p>
         </div>
-
-        <div class="categories">
-          <button class="filter-btn active" data-filter="all">همه محصولات</button>
-          <button class="filter-btn" data-filter="tech">تکنولوژی</button>
-          <button class="filter-btn" data-filter="fashion">مد و پوشاک</button>
-          <button class="filter-btn" data-filter="accessory">اکسسوری</button>
+        <div class="faq-list">
+          <details class="faq-item"><summary>آیا سایت روی موبایل هم درست نمایش داده می‌شود؟</summary><p>بله؛ چیدمان صفحه برای موبایل، تبلت و نمایشگر دسکتاپ تنظیم شده است.</p></details>
+          <details class="faq-item"><summary>برای انتشار به هاست پولی نیاز دارم؟</summary><p>برای یک سایت استاتیک ساده، می‌توانید از GitHub Pages به‌صورت رایگان استفاده کنید.</p></details>
+          <details class="faq-item"><summary>چطور رنگ‌ها و نوشته‌ها را تغییر بدهم؟</summary><p>فایل index.html را ویرایش کنید؛ عنوان‌ها و متن‌ها در HTML و رنگ‌های اصلی در متغیرهای ابتدای CSS هستند.</p></details>
+          <details class="faq-item"><summary>آیا فرم تماس در این نسخه پیام ارسال می‌کند؟</summary><p>فرم‌های نمایشی به‌تنهایی اطلاعات را به سرور نمی‌فرستند؛ برای دریافت پیام واقعی باید سرویس فرم یا بک‌اند متصل شود.</p></details>
         </div>
+      </div>
+    </section>
 
-        <div class="search-box">
-          <input type="search" id="searchInput" placeholder="🔍 جستجوی محصولات...">
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div><span class="section-kicker">قدم بعدی</span><h2>این فضا را متعلق به خودتان کنید.</h2><p>نام سایت، متن معرفی، لینک شبکه‌های اجتماعی و نمونه‌کارهای واقعی را جایگزین کنید.</p>
+            <form class="newsletter" id="newsletterForm">
+              <input type="email" id="newsletterEmail" placeholder="ایمیل شما (اختیاری)" aria-label="ایمیل شما" />
+              <button class="button button-primary" type="submit">ثبت علاقه‌مندی</button>
+            </form>
+            <div class="form-note" id="formNote" aria-live="polite"></div>
+          </div>
+          <a class="button button-primary" href="https://github.com/" target="_blank" rel="noopener noreferrer">رفتن به GitHub <span aria-hidden="true">↗</span></a>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <div class="products-grid" id="productsGrid">
-
-          <article class="product-card reveal" data-category="tech" data-name="هدفون بی سیم">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1505740420928-5e560
-
-ChatGPT is AI and can make mistakes.
-New chat
-Images
-Plugins
-See plans and pricing
-Help
-Deep research
-Settings
-Get responses tailored to you
-
-Log in to get answers based on saved chats, plus create images and upload files.
-Chat with ChatGPT
+  <button class="back-top" id="backTop" aria-label="بازگشت به بالای صفحه">↑</button>
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> نمایشگاه دیجیتال — ساخته‌شده با دقت.</span>
+      <div class="footer-links"><a href="#home">بازگشت به بالا ↑</a><a href="#projects">نمونه‌کارها</a><a href="#faq">پرسش‌ها</a><a href="#contact">تماس</a></div>
+    </div>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 500), { passive: true });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    const newsletterForm = document.getElementById('newsletterForm');
+    newsletterForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const email = document.getElementById('newsletterEmail').value.trim();
+      const note = document.getElementById('formNote');
+      note.textContent = email
+        ? 'این فرم نمایشی است؛ برای ثبت واقعی ایمیل باید سرویس ارسال متصل شود.'
+        : 'برای ثبت واقعی، ابتدا یک سرویس فرم به سایت متصل کنید.';
+    });
+  </script>
+</body>
+</html>
